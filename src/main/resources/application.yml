@@ -1,0 +1,17 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: summer
+  datasource:
+    url: jdbc:mysql://mysql:3306/summer
+    username: spring
+    password: helehele
+    hikari:
+      auto-commit: false
+      connection-timeout: 300
+      validation-timeout: 300
+      max-lifetime: 3600
+      maximum-pool-size: 10
+      minimum-idle: 1
